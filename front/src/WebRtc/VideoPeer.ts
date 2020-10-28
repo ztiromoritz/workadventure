@@ -15,7 +15,7 @@ export class VideoPeer extends Peer {
     constructor(public userId: number, initiator: boolean, private connection: RoomConnection) {
         super({
             initiator: initiator ? initiator : false,
-            reconnectTimer: 10000,
+           // reconnectTimer: 10000,
             config: {
                 iceServers: [
                     {
@@ -32,7 +32,7 @@ export class VideoPeer extends Peer {
 
         console.log('PEER SETUP ', {
             initiator: initiator ? initiator : false,
-            reconnectTimer: 10000,
+           // reconnectTimer: 10000,
             config: {
                 iceServers: [
                     {
